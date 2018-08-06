@@ -1,0 +1,73 @@
+div.header{
+    background:rgb(34, 65, 10);
+    color:white;
+    padding:10px
+    
+}
+
+.voltage-img{
+    margin-top:10px;
+    margin-left:20px;
+    width:80px
+}
+
+.voltage-div{
+    font-size:1.5em;
+    padding-top:12px;
+    padding-left:100px
+}
+
+.brand{
+    font-size:2em;
+    text-align: center;
+    color:rgb(243, 243, 243)  
+}
+
+.date-time{
+    font-size:1em;
+    text-align: right;
+    padding-top:5px;
+    padding-right:40px
+}
+
+
+
+
+
+/* MOBILE */
+@media only screen and (max-width: 600px){
+    .voltage-img{
+        margin-top:5px;
+        margin-left:5px;
+        width:30px
+    }
+    .voltage-div{
+        font-size:0.8em;
+        padding-top:0px;
+        padding-left:10px
+    }
+    .brand{
+        font-size:1.2em;
+    }
+  
+.date-time{
+    font-size:1em;
+    padding-top:5px;
+    text-align: center;
+    padding-right:0px
+}
+}
+
+
+@media only screen and (min-width: 1920px){
+    .brand{
+        font-size:4em;
+        
+    }
+
+    .date-time{
+        font-size:1.3em;
+        padding-top:20px
+       
+    }
+}

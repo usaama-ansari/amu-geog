@@ -1,0 +1,27 @@
+nav{
+    border-bottom:2px solid rgb(143, 165, 21);
+ 
+}
+
+
+.navbar-brand img{
+    height:50px;
+    margin:0px;
+    padding:0px;
+
+}
+
+/* SMALL TABLETS */
+@media only screen and (min-width: 768px){
+
+}
+    /* BIG TABLETS */
+
+@media only screen and (min-width:1024px){
+   
+}
+
+
+@media only screen and (min-width:1920px){
+
+}

@@ -1,0 +1,243 @@
+<div class="container-fluid">
+  <div class="row dept-row">
+    <div class="col-12 col-md-6 geog-wpr">
+      <div class="row">
+        <!-- logo -->
+        <!-- <div class="col-2 ">
+          <img class="img-responsive dept-logo float-right" src="assets/department-logo.png" />
+        </div> -->
+        <!-- dept name -->
+        <div class="col-10 " style="padding:0px">
+          <div class="dept-heading">
+            <h3>
+              <b>Department of Wildlife Sciences</b>
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Left col -->
+    <div class="col-12 col-md-6 amu-wpr">
+      <div class="row">
+        <!-- logo -->
+        <div class="col-2 col-md-2 ">
+          <img class="img-responsive amu-logo float-right" src="assets/amu_logo.png" />
+        </div>
+        <!-- dept name -->
+        <div class="col-10 col-md-10" style="padding:0px">
+          <div class="amu-heading">
+            <h3>
+              <b>Aligarh Muslim University</b>
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- NEW ROWS -->
+
+
+
+<div class="container-fluid">
+  <div class="row tiles-row ">
+
+      <div *ngFor="let param of parameters;let i=index" class="col-md-6 col-lg-6 col-xl-3" style="padding:4px">
+        <div class="tiles">
+          <div class="row">
+            <div class="col-3">
+              <img [src]="param['icon']" class="icon-img" />
+            </div>
+            <div class="col-9">
+              <h1 class="param-name text-center">{{param['parameter']}}</h1>
+              <h1 class="param-value">
+                <b>{{param['value']}} <span *ngIf="i === 3">&deg;C</span></b>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+
+
+
+  <!-- ACCUWEATHER FORECAST 5 Days -->
+  <div class="container-fluid acc-tiles" style=" border-radius:10px">
+        <h4 class="text-center">5 days Forecast | <span style="color:rgb(211, 137, 9)"><i class="fa fa-sun"></i> OpenWeatherMap</span></h4>
+        <div class="row text-left">
+          <div class="col-12 col-md-6 col-lg accuweather" *ngFor="let item of accWArray" >
+            <p style="text-align:center;background:rgba(0,0,0,0.3);color: white">{{item?.date}}</p>
+            <p>Temp.:
+              <b>{{item?.temp}} &deg;C</b>
+            </p>
+            <p>Pressure:
+              <b>{{item?.temp}} bar</b>
+            </p>
+            <p>Humidity:
+              <b>{{item?.humidity}} %</b>
+            </p>
+            <p>Wind sp.:
+              <b>{{item?.wSpeed}} km/hr</b>
+            </p>
+            <p>Wind dir.:
+              <b>{{item?.wDir}} &deg;</b>
+            </p>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- 
+  <div class="row text-center" style="padding:15px;">
+      <div class="col-md-12" style="border:1px solid transparent;border-radius:20px">
+    
+        <div class="row ">
+    
+          <div class="col-md-3 " style="padding:4px">
+            <div class="tiles" style=" height:215px; border-radius:10px">
+              <img [src]="parameters[5]['icon']" class="float-left icon-img" />
+              <h1 class="param-name">Temperature</h1>
+              <h1 class="param-value">
+                <b>{{parameters[5]['value']}}&nbsp;&deg;C</b>
+              </h1>
+            </div>
+          </div>
+    
+          <div class="col-md-3" style="padding:4px">
+            <div class="tiles" style=" height:215px; border-radius:10px">
+              <img [src]="parameters[2]['icon']" class="float-left icon-img" />
+              <h1 class="param-name">Pressure</h1>
+              <h1 class="param-value">
+                <b>{{parameters[2]['value']}}</b>
+              </h1>
+            </div>
+          </div>
+    
+          <div class="col-md-3" style="padding:4px">
+            <div class="tiles" style=" height:215px; border-radius:10px">
+              <img [src]="parameters[3]['icon']" class="float-left icon-img" />
+              <h1 class="param-name">Rainfall</h1>
+              <h1 class="param-value">
+                <b>{{parameters[3]['value']}}</b>
+              </h1>
+            </div>
+          </div>
+    
+          <div class="col-md-3" style="padding:4px">
+            <div class="tiles" style=" height:215px; border-radius:10px">
+              <img [src]="parameters[6]['icon']" class="float-left icon-img" />
+              <h1 class="param-name">Relative Humidity</h1>
+              <h1 class="param-value">
+                <b>{{parameters[6]['value']}}</b>
+              </h1>
+            </div>
+          </div>
+        </div>
+    
+        <div class="row">
+          <div class="col-md-3 text-left" style="padding:4px">
+            <div class="tiles" style="height:215px; border-radius:10px">
+              <img [src]="parameters[0]['icon']" class="float-left icon-img" />
+              <h1 class="param-name">Wind Direction</h1>
+              <h1 class="param-value">
+                <b>{{parameters[0]['value']}}</b>
+              </h1>
+            </div>
+          </div>
+    
+          <div class="col-md-3" style="padding:4px">
+            <div class="tiles" style=" height:215px; border-radius:10px">
+              <img [src]="parameters[1]['icon']" class="float-left" style="width:120px;margin:10px;padding:0px" />
+              <h1 class="param-name">Wind Speed</h1>
+              <h1 class="param-value">
+                <b>{{parameters[1]['value']}}</b>
+              </h1>
+            </div>
+          </div>
+    
+          <div class="col-md-3" style="padding:4px">
+            <div class="tiles" style=" height:215px; border-radius:10px">
+              <img [src]="parameters[4]['icon']" class="float-left icon-img" />
+              <h1 class="param-name">Cum. Rainfall</h1>
+              <h1 class="param-value">
+                <b>{{parameters[4]['value']}}</b>
+              </h1>
+            </div>
+          </div>
+    
+          <div class="col-md-3" style="padding:4px">
+            <div class="tiles" style=" height:215px; border-radius:10px">
+              <img [src]="parameters[7]['icon']" class="float-left icon-img" />
+              <h1 class="param-name">Solar Radiation</h1>
+              <h1 class="param-value">
+                <b>{{parameters[7]['value']}}</b>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h5 class="text-center" style="color:white">Last updated on:
+        <b>{{lastUpdated[0]}}</b>&nbsp;&nbsp;at:
+        <b>{{lastUpdated[1]}}</b>
+      </h5>
+    </div>
+    
+    </div> -->
+
+
+
+

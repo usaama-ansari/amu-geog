@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+
+*{
+    box-sizing: border-box;
+    font-family: 'Verdana','Century Gothic'
+}
+
+body{
+    margin:0px;
+    padding:0px;
+    height:1050px;
+background-image:url('./assets/blur_login_bg.jpg');
+background-position: top;
+background-size: cover;
+background-repeat: no-repeat
+}
+
+.cursor{
+    cursor: pointer
+}
+
+@media only screen and (max-width: 600px){
+    body{
+        height:100%;
+    }
+}

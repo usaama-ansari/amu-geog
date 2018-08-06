@@ -1,0 +1,198 @@
+
+/* MOBILE DEVICES */
+
+div.header{
+    background:rgb(34, 65, 10);
+    color:white;
+    padding:10px
+}
+
+nav{
+    border-bottom:2px solid rgb(143, 165, 21);
+   background:rgb(25, 221, 7)
+}
+
+.dept-row{
+    background:#ebebeb;
+    padding:0px 50px 10px 50px
+}
+div.dept-heading{
+    padding-top:25px;
+    width:100%;
+    color:rgb(131, 36, 13);
+}
+.dept-heading h3{
+    font-size:0.9em   
+}
+.dept-logo{
+   width:50px;
+   padding:0px;
+   margin:10px 0px 0px 0px
+}
+
+.amu-heading{
+    padding-top:25px;
+    width:100%;
+    color:rgb(131, 36, 13);
+}
+.amu-heading h3{
+    font-size:0.9em
+}
+.amu-logo{
+ width:50px;
+ padding:0px;
+ margin:10px 0px 0px 0px
+ }
+
+.navbar-brand img{
+    height:50px;
+    margin:0px;
+    padding:0px;
+
+}
+
+/* TILES STYLES */
+div.tiles-row{
+    padding:15px
+} 
+
+div.tiles{
+    height:140px;
+    border-radius:10px;
+    background:rgba(255,255,255,0.4);
+    border:6px solid rgba(0,0,0,0.4);
+}
+
+.icon-img{
+    width:80px;
+    margin:10px;
+    padding:10px 0px 0px 0px;
+}
+
+.param-name{
+    color:black;
+    font-weight:bold;
+    padding:20px 10px 0px 0px;
+    font-size:1.5em
+}
+
+.param-value{
+   color:black;
+   font-size:1.5em;
+   padding:15px 10px 0px 20px
+}
+.accuweather p {
+    padding:0px;
+    margin:5px
+}
+.acc-tiles{
+    border-radius:10px;
+    background:rgba(255,255,255,0.4);
+    border:6px solid rgba(0,0,0,0.4);
+}
+
+
+
+
+/* SMALL TABLETS */
+@media only screen and (min-width: 768px){
+    .dept-heading{
+        padding-top:5px;
+    }
+    .dept-heading h3{
+        font-size:1.1em;
+        padding-top:0px
+    }
+    .amu-heading{
+        padding-top:5px;
+    }
+    .amu-heading h3{
+        font-size:1.1em;
+        padding-top:20px
+    }
+
+    .icon-img{
+        width:90px;
+        margin:10px;
+        padding:0px;
+    }
+    .param-name{
+        color:black;
+        font-weight:bold;
+        padding:20px 10px 0px 0px;
+        font-size:1em
+    }
+    
+    .param-value{
+       color:black;
+       font-size:1em;
+       padding:15px 10px 0px 50px
+    }
+    
+}
+
+
+/* BIG TABLETS */
+
+@media only screen and (min-width:1024px){
+    .param-name{
+        
+        padding:20px 10px 0px 0px;
+        font-size:1em
+    }
+    
+    .param-value{
+       font-size:1em;
+       padding:15px 10px 0px 50px
+    }
+}
+
+
+
+
+
+@media only screen and (min-width:1920px){
+   
+    .dept-heading h3{
+        padding-top:10px;
+        font-size:1.5em   
+    }
+    .dept-logo{
+       width:80px;
+      
+    }
+   
+    .amu-heading h3{
+        padding-top:30px;        
+        font-size:1.5em
+    }
+    .amu-logo{
+     width:80px;
+   
+     }
+
+     /* TILE STYLES */
+     
+    div.tiles{
+    height:215px;
+   
+    }
+
+.icon-img{
+    width:130px;
+    margin:10px;
+    padding:0px;
+}
+
+.param-name{
+    padding:30px 10px 0px 0px;
+    font-size:2em
+}
+
+.param-value{
+   color:black;
+   font-size:2em;
+   padding:25px 10px 0px 100px
+}
+    
+}
